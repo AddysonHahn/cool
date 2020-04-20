@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Cool Submissons</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="form">
+<label for ="name"> Fill out the form below <label>
+  
+  <br> <br> 
+  
+<label for ="name"> Name: <label>
+<input  id = "name" v-model = "name" type = "text" name = "name"/>
+<p>{{nameError}}</p>
+                                                  
+<label for="age"> Age: <label>
+<input id="age" v-model="age" type="text" name="age"/>
+<p>{{ageError}}</p>
+  
+<label for="email"> Email: <label>
+<input id="email" v-model="email" type="text" name="email" />
+<p>{{emailError}}</p>
+  
+<label for="comment"> Comments: <label>
+<input id="comment" v-model="comment" type="text" name="comment" ></input>
+<p>{{commentError}}</p>                                                 
+<input type="submit" value="Submit" v-on:click="validate"/>
+<p>{{submit}}</p>  
+  
+   
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
